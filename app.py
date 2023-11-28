@@ -5,6 +5,7 @@ import numpy as np
 import pickle
 
 model = tf.keras.models.load_model("model/defect_detection_model.h5")
+
 image_validation_model = tf.keras.models.load_model("model/image_validation_model.h5")
 
 # Load the scaler from the file
@@ -24,7 +25,9 @@ st.set_page_config(
     page_title="Defect detection App",
     page_icon="images/metal_icon.jpeg"
 )
+
 st.title("⚙️ Defect detection App ⚙️")
+
 st.markdown("<div style='padding: 30px'></div>", unsafe_allow_html=True)
 st.subheader("Welcome to Our Trained Defect Detection Model")
 st.markdown("<div style='padding: 5px'></div>", unsafe_allow_html=True)
@@ -42,7 +45,6 @@ st.markdown("""
 st.markdown("<div style='padding: 50px'></div>", unsafe_allow_html=True)
 st.subheader("Upload the image: ")
 st.markdown("<div style='padding: 10px'></div>", unsafe_allow_html=True)
-
 
 img = st.file_uploader("Insert the image")
 st.markdown("<div style='padding: 5px'></div>", unsafe_allow_html=True)
