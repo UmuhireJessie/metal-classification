@@ -4,13 +4,18 @@
 
 ## Description
 
-This project contains the illustration of how the model works on a simple web page using Flask; a python framework. The app has been deployed on Render, a unified cloud platform used for building and running all types of apps and websites. On the web page, one will be able to upload the image and submit by clicking the button available on the page. After that the image is fed into the trained model and gives the output or the prediction. The project also contains a jupiter notebook file that shows steps followed in trainining the data used on the web page which is found in `model` folder. 
+The Defect Detection App is a web application that utilizes machine learning models to predict whether the top part of a submersible pump impeller is defective or not. The models are trained on images of the top part of a submersible pump impeller using a pre-trained ResNet model for feature extraction and a custom defect detection model for classification. The app has been deployed on Streamlite.
 
-Note: Deployed version of the web pages [Here](https://metal-classification-vsk4.onrender.com/)
+Note: Deployed version of the web pages [Here](https:// /)
+
+## Features
+- Image Upload: Users can upload an image of the top part of a submersible pump impeller for defect detection.
+- Relevance Check: The app checks if the uploaded image is relevant by comparing its features to a pre-defined clustering model.
+- Prediction: After uploading the image, users can click the "Predict" button to get the model's prediction regarding the defect status.
 
 ## Packages Used
 
-This project has used the some packages like numpy to transform the user inputs into a numpy array and other important packages which have to be installed to run this web app locally present in `requirements.txt` file. 
+This project has used the some packages such as numpy, tensorflow, which have to be installed to run this web app locally present in `requirements.txt` file. 
 
 ## Installation
 
@@ -19,7 +24,6 @@ To run the project locally, there is a need to have Visual Studio Code (vs code)
 - **[vs code](https://code.visualstudio.com/download)**: It is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux, and macOS.
 
 ## Usage
-
 
 1. Clone the project 
 
@@ -35,14 +39,32 @@ cd metal-classification
 code .
 ```
 
-3. Run the project
+3. Install the required dependencies
 
 ``` bash
-python app.py
+pip install -r requirements.txt
 ```
 
-4. Use the link printed in the terminal to visualise the app. (Usually `http://127.0.0.1:5000/`)
 
+4. Run the project
+
+``` bash
+streamlit run app.py
+```
+
+5. Use the link printed in the terminal to visualise the app. (Usually `http://127.0.0.1:5000/`)
+
+## Model Files
+
+- defect_detection_model.h5: The main defect detection model trained on top parts of submersible pump impeller images.
+- image_validation_model.h5: A model used to validate if the uploaded image is relevant to the defect detection task.
+- scaler.pkl: The scaler used for standardizing features during inference.
+- kmeans_model.pkl: The KMeans clustering model for checking the relevance of the uploaded image.
+- train_features.pkl: Features extracted from the training set for clustering.
+
+## Important Notes
+- The app is designed to work specifically with images of the top part of a submersible pump impeller.
+- Images that do not belong to this category will be rejected.
 
 ## Authors and Acknowledgment
 
