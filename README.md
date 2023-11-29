@@ -29,7 +29,7 @@ This project has used the some packages such as numpy, tensorflow, which have to
 
 To run the project locally, there is a need to have Visual Studio Code (vs code) installed on your PC:
 
-- **[vs code](https://code.visualstudio.com/download)**: It is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux, and macOS.
+- **[VS Code](https://code.visualstudio.com/download)**: It is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux, and macOS.
 
 ## Usage
 
