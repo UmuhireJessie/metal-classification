@@ -6,7 +6,7 @@
 
 The Defect Detection App is a web application that utilizes machine learning models to predict whether the top part of a submersible pump impeller is defective or not. The models are trained on images of the top part of a submersible pump impeller using a pre-trained ResNet model for feature extraction and a custom defect detection model for classification. The app has been deployed on Streamlite.
 
-Note: Deployed version of the web pages [Here](https:// /)
+Note: Deployed version of the web pages [Here](https://casting-defect-detection.streamlit.app/)
 
 ## Notebooks and dataset
 
