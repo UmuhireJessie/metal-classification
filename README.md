@@ -8,6 +8,14 @@ The Defect Detection App is a web application that utilizes machine learning mod
 
 Note: Deployed version of the web pages [Here](https:// /)
 
+## Notebooks and dataset
+
+- [Dataset](https://www.kaggle.com/datasets/ravirajsinh45/real-life-industrial-dataset-of-casting-product)
+
+- [Classification model](https://colab.research.google.com/drive/1iNE_vqm_ldkyepU1-zqdXWsXoKWYkkuN#scrollTo=-6OFw-eLwLP7)
+
+- [Image validation](https://colab.research.google.com/drive/1ymbm-72w7LZ7VScm497O1j8nXTO6AcK8#scrollTo=l1oNCvHDID6ehttps%3A%2F%2Fcolab.research.google.com%2Fdrive%2F1ymbm-72w7LZ7VScm497O1j8nXTO6AcK8%23scrollTo%3Dl1oNCvHDID6e)
+
 ## Features
 - Image Upload: Users can upload an image of the top part of a submersible pump impeller for defect detection.
 - Relevance Check: The app checks if the uploaded image is relevant by comparing its features to a pre-defined clustering model.
